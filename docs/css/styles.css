@@ -4060,11 +4060,12 @@ textarea.form-control-lg {
   white-space: nowrap;
 }
 .navbar-nav {
-  display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  display: table;
+  margin: 0 auto;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -11344,6 +11345,13 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.img-profile {
+  max-width: 10rem;
+  max-height: 10rem;
+  /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
+  border: 0.5rem solid #256D85;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
@@ -11357,25 +11365,19 @@ p.lead {
     width: 17rem;
     height: 100vh;
   }
-  #sideNav .navbar-brand {
+.navbar-brand {
     display: flex;
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
-    border: 0.5rem solid #256D85;
-  }
-  #sideNav .navbar-collapse {
+  .navbar-collapse {
     display: flex;
     align-items: flex-start;
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
   }
-  #sideNav .navbar-collapse .navbar-nav {
+ .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
   }
@@ -11442,8 +11444,8 @@ section.resume-section .resume-section-content {
 .postcard {
   flex-wrap: wrap;
   display: flex;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-  border-radius: 10px;
+  /* box-shadow: 0 2px 10px -6px rgba(0, 0, 0, 0.66); */
+  border: 1px solid lightgray;
   margin: 0 0 2rem 0;
   overflow: hidden;
   position: relative;
@@ -11486,7 +11488,6 @@ section.resume-section .resume-section-content {
   width: 50px;
   height: 10px;
   margin: 10px 0;
-  border-radius: 5px;
   background-color: #424242;
   transition: width 0.2s ease;
 }
@@ -11542,6 +11543,16 @@ section.resume-section .resume-section-content {
   width: 100px;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height:100px;
+}
+
 @media screen and (min-width: 769px) {
   .postcard {
     flex-wrap: inherit;
@@ -11557,6 +11568,12 @@ section.resume-section .resume-section-content {
     max-height: 250px;
     transition: transform 0.3s ease;
   }
+
+  .card__img {
+    max-width: 300px;
+    max-height: 250px;
+  }
+
   .postcard .postcard__text {
     padding: 1.5rem;
     width: 100%;
