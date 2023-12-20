@@ -19,14 +19,6 @@ p{
     margin: 0;
 }
 
-ul li, ol li{
-    margin-bottom: 30px;
-}
-
-li ul li{
-    margin-bottom: 0px;
-}
-
 a {
     color: var(--primary-color);
     transition: all .3s;
@@ -272,4 +264,10 @@ h2, h3, h4 {
 .clr-table table, th, td {
     border: 1px solid #ddd;
     padding: 5px;
+}
+
+/* model */
+.modal-lg{
+    width: fit-content;
+    max-width: 80%;
 }
