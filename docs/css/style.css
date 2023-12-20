@@ -56,7 +56,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2, h3 {
+h2, h3, h4 {
     width: fit-content;
     color: var(--secondary-color);
     margin-bottom: 20px;
