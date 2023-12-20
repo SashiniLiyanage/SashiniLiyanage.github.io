@@ -6,6 +6,7 @@
     --secondary-color: #04598d;
     --dark-color: rgb(0, 0, 0);
     --bg-color:#F5F5F5;
+    --gray-color: rgb(117, 117, 117); 
     --link-color:#b80101;
   }
   
@@ -55,17 +56,29 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2 {
+h2, h3 {
     width: fit-content;
     color: var(--secondary-color);
-    margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.blue{
+    color: var(--secondary-color); 
+}
+
+.gray{
+    color: var(--gray-color)
 }
 
 .project-img {
     width: 100%;
     border: 1px solid #ececec;
     margin-bottom: 30px;
+}
+
+.news-img {
+    width: 100%;
+    border: 1px solid #ececec;
 }
 
 /**********************************/
@@ -97,6 +110,10 @@ h2 {
     background-color: #ffffff;
     padding: 50px 20px 100px 20px;
     width: 100%;
+}
+
+.wrapper .content .inner-content > div{
+    margin-bottom: 100px;
 }
 
 .navbar {
@@ -134,14 +151,18 @@ h2 {
     transition: all .3s;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:hover i,
-.navbar-expand-md .navbar-nav .nav-link.active i{
+.navbar-expand-md .navbar-nav .nav-link:hover{
     color: var(--dark-color);
 }
 
-.navbar-expand-md .navbar-nav .nav-link:hover,
-.navbar-expand-md .navbar-nav .nav-link.active{
-    color: var(--dark-color);
+.active-link{
+    color: #ffffff !important;
+    background-color: var(--dark-color);
+}
+
+.active-link:hover{
+    color: #ffffff;
+    background-color: var(--dark-color);
 }
 
 
@@ -151,6 +172,14 @@ h2 {
     -moz-transition: margin 200ms ease-out;
     -o-transition: margin 200ms ease-out;
     transition: margin 200ms ease-out;
+}
+
+.icon {
+    display: none;
+}
+
+.navbar-toggler-icon{
+    filter: grayscale(1) invert(1);
 }
 
 @media (min-width: 768px) {        
@@ -164,6 +193,10 @@ h2 {
         scrollbar-width: thin;
         scrollbar-color: gray;
         z-index: 2;
+    }
+
+    .icon {
+        display: block;
     }
 
     .wrapper .sidebar:hover {
@@ -223,5 +256,20 @@ h2 {
     .navbar-expand-md .navbar-nav .nav-link {
         padding: 5px 30px 7px 30px;
     }
+
+    .icon {
+        display: none;
+    }
     
+}
+
+/* Table */
+.clr-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+.clr-table table, th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
 }
