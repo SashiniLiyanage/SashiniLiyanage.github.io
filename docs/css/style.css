@@ -71,7 +71,7 @@ h2, h3, h4 {
 
 .news-img {
     width: 100%;
-    border: 1px solid #ececec;
+    border: 1px solid #ebebeb;
 }
 
 /**********************************/
@@ -87,7 +87,7 @@ h2, h3, h4 {
     position: relative;
     width: 100%;
     float: left;
-    background: #fbfbfb;
+    background: #ebebeb;
 }
 
 .wrapper .content {
@@ -109,9 +109,17 @@ h2, h3, h4 {
     margin-bottom: 70px;
 }
 
+.bold {
+    font-weight: 500;
+}
+
+.bold-2 {
+    font-weight: 650;
+}
+
 .navbar {
     padding: 15px;
-    background: #fbfbfb !important;
+    background: #ebebeb !important;
 }
 
 .navbar .navbar-brand{
