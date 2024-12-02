@@ -280,3 +280,16 @@ h2, h3, h4 {
     width: fit-content;
     max-width: 80%;
 }
+
+.zoom-container {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.zoom-container img.zoom-in {
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.zoom-container img.zoom-in:hover {
+    transform: scale(1.1);
+}
